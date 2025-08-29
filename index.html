@@ -608,10 +608,443 @@ Including Negative Audio Input
         </div>
 
         <p style="text-align:center; font-size: 13px; color:#555; margin-top:10px;">
-            Figura 2. Ejemplos de <em>Image → Audio Retrieval</em> en VGG-SS.
+            Figura 2. <em>Image → Audio Retrieval</em> examples in VGG-SS.
         </p>
     </section>
 
+
+
+
+
+
+    <!-- ===== Audio -> Image Retrieval (VGG-SS) ===== -->
+    <section class="retrieval-section" id="audio-to-image-vggss">
+        <div class="table-title">Audio → Image Retrieval in IS3$^+$</div>
+
+        <!-- Cabecera -->
+        <div class="retrieval-header">
+            <div> <span>Query Audio</span> </div>
+            <div>Top 1</div>
+            <div>Top 2</div>
+            <div>Top 3</div>
+            <div>Top 4</div>
+        </div>
+
+        <!-- Fila: CASE 1 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: audio reproducible + mini portada -->
+            <div class="cell">
+                <div class="audio-box">
+                    <!-- mini portada opcional (por ejemplo, un espectrograma o frame de referencia) -->
+                    <img class="thumb" src="assets/retrieval/is3+/image/accordion_female_10438_accordion.jpg"
+                        alt="Query audio thumbnail">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/accordion_female_10438_accordion.wav"
+                            type="audio/mpeg">
+                        <!-- fallback -->
+                        Tu navegador no soporta el elemento <code>audio</code>.
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: imagen recuperada -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/accordion_child_10519_accordion.jpg" alt="Top1">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/male_accordion_9176_accordion.jpg" alt="Top2">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/mouse_accordion_3689_accordion.jpg" alt="Top3">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/parrot_accordion_1557_accordion.jpg" alt="Top4">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <!-- Fila: CASE 2 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: audio reproducible + mini portada -->
+            <div class="cell">
+                <div class="audio-box">
+                    <!-- mini portada opcional (por ejemplo, un espectrograma o frame de referencia) -->
+                    <img class="thumb" src="assets/retrieval/is3+/image/lion_chainsaw_756_lion.jpg"
+                        alt="Query audio thumbnail">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/lion_chainsaw_756_lion.wav" type="audio/mpeg">
+                        <!-- fallback -->
+                        Tu navegador no soporta el elemento <code>audio</code>.
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: imagen recuperada -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/lion_cat_872_cat.jpg" alt="Top1">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/lion_vacuumcleaner_645_lion.jpg" alt="Top2">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/lion_frenchhorn_658_lion.jpg" alt="Top3">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/lion_goat_849_lion.jpg" alt="Top4">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <!-- Fila: CASE 3 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: audio reproducible + mini portada -->
+            <div class="cell">
+                <div class="audio-box">
+                    <!-- mini portada opcional (por ejemplo, un espectrograma o frame de referencia) -->
+                    <img class="thumb" src="assets/retrieval/is3+/image/chicken_bus_8050_chicken.jpg"
+                        alt="Query audio thumbnail">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/chicken_bus_8050_chicken.wav" type="audio/mpeg">
+                        <!-- fallback -->
+                        Tu navegador no soporta el elemento <code>audio</code>.
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: imagen recuperada -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/chicken_beach_chicken.jpg" alt="Top1">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/ocean_turkey_5209_turkey.jpg" alt="Top2">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/chicken_alligator_8028_chicken.jpg" alt="Top3">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/cat_chicken_1748_chicken.jpg" alt="Top4">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <!-- Fila: CASE 4 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: audio reproducible + mini portada -->
+            <div class="cell">
+                <div class="audio-box">
+                    <!-- mini portada opcional (por ejemplo, un espectrograma o frame de referencia) -->
+                    <img class="thumb" src="assets/retrieval/is3+/image/cello_male_3879_cello.jpg"
+                        alt="Query audio thumbnail">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/cello_male_3879_cello.wav" type="audio/mpeg">
+                        <!-- fallback -->
+                        Tu navegador no soporta el elemento <code>audio</code>.
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: imagen recuperada -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/cello_popcorn_3899_cello.jpg" alt="Top1">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/cello_people_3982_cello.jpg" alt="Top2">
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/cello_female_3919_cello.jpg" alt="Top3">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/cello_donkey_3905_cello.jpg" alt="Top4">
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <!-- Pie de figura -->
+        <p style="text-align:center; font-size: 13px; color:#555; margin-top:10px;">
+            Figura 1. <em>Audio → Image Retrieval</em> examples in IS3$^+$.
+        </p>
+    </section>
+
+    <!-- ===== Image -> Audio Retrieval (VGG-SS) ===== -->
+    <section class="retrieval-section" id="image-to-audio-is3+">
+        <div class="table-title">Image → Audio Retrieval in IS3$^+$</div>
+
+        <div class="retrieval-header">
+            <div><span>Query Image</span></div>
+            <div>Top 1</div>
+            <div>Top 2</div>
+            <div>Top 3</div>
+            <div>Top 4</div>
+        </div>
+
+        <!-- Fila: CASE 1 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: imagen de consulta -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/accordion_female_10438_accordion.jpg"
+                    alt="Query image">
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: audio reproducible -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/piano_accordion_9430_accordion.jpg"
+                        alt="Top1 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/piano_accordion_9430_accordion.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/racecar_accordion_4559_accordion.jpg"
+                        alt="Top2 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/racecar_accordion_4559_accordion.wav"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/accordion_penguin_10497_accordion.jpg"
+                        alt="Top3 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/accordion_penguin_10497_accordion.wav"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/train_accordion_6155_accordion.jpg"
+                        alt="Top4 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/train_accordion_6155_accordion.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <!-- Fila: CASE 2 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: imagen de consulta -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/lion_chainsaw_756_lion.jpg" alt="Query image">
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: audio reproducible -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/lion_electronicorgan_803_lion.jpg"
+                        alt="Top1 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/lion_electronicorgan_803_lion.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/lion_snowmobile_743_lion.jpg" alt="Top2 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/lion_snowmobile_743_lion.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/lion_motorboat_736_lion.jpg" alt="Top3 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/lion_motorboat_736_lion.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/lion_icecreamtruck_823_lion.jpg"
+                        alt="Top4 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/lion_icecreamtruck_823_lion.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <!-- Fila: CASE 3 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: imagen de consulta -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/chicken_bus_8050_chicken.jpg" alt="Query image">
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: audio reproducible -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/lion_bus_807_bus.jpg" alt="Top1 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/lion_bus_807_bus.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/stream_bus_5395_bus.jpg" alt="Top2 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/stream_bus_5395_bus.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/tractor_popcorn_3452_tractor.jpg"
+                        alt="Top3 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/tractor_popcorn_3452_tractor.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/airplane_bus_1064_bus.jpg" alt="Top4 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/airplane_bus_1064_bus.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <!-- Fila: CASE 4 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: imagen de consulta -->
+            <div class="cell">
+                <img class="thumb" src="assets/retrieval/is3+/image/cello_male_3879_cello.jpg" alt="Query image">
+                <!-- <div class="caption">people babbling (query)</div> -->
+            </div>
+
+            <!-- Col 2: audio reproducible -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/cello_gibbon_3835_cello.jpg" alt="Top1 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/cello_gibbon_3835_cello.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/slotmachine_cello_2171_cello.jpg"
+                        alt="Top2 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/slotmachine_cello_2171_cello.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people babbling</div> -->
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/cello_bird_3804_cello.jpg" alt="Top3 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/cello_bird_3804_cello.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <div class="audio-box">
+                    <img class="thumb" src="assets/retrieval/is3+/image/cello_chinchilla_3913_cello.jpg"
+                        alt="Top4 thumb">
+                    <audio controls preload="none">
+                        <source src="assets/retrieval/is3+/audio/cello_chinchilla_3913_cello.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+                <!-- <div class="caption">people coughing</div> -->
+            </div>
+        </div>
+
+        <p style="text-align:center; font-size: 13px; color:#555; margin-top:10px;">
+            Figura 2. <em>Image → Audio Retrieval</em> examples in IS3$^+$.
+        </p>
+    </section>
 
 </body>
 
