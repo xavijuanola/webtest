@@ -115,6 +115,13 @@ Including Negative Audio Input
            y 4 cols del segundo grupo */
         .inf-grid {
             display: grid;
+            grid-template-columns: 80px repeat(4, 1fr) 16px repeat(4, 1fr);
+            gap: 10px 10px;
+            align-items: start;
+        }
+
+        .inf-grid-is3 {
+            display: grid;
             grid-template-columns: 80px repeat(5, 1fr) 16px repeat(5, 1fr);
             gap: 10px 10px;
             align-items: start;
@@ -1550,7 +1557,7 @@ Including Negative Audio Input
         <div class="inf-title">Qualitative localization on VGG-SS</div>
 
         <!-- Row 1: Audio headers -->
-        <div class="inf-grid">
+        <div class="inf-grid-is3">
             <!-- Col 1: empty -->
             <div></div>
 
@@ -1665,7 +1672,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 2: LVS Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -1706,7 +1713,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 3: EZ-VSL Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -1748,7 +1755,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 4: FNAC Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -1790,7 +1797,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 5: SLAVC Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -1832,7 +1839,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 6: SSL-TIE Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -1875,7 +1882,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 7: SSL-Align (S. Sup.) Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -1919,7 +1926,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 8: ACL Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -1960,7 +1967,7 @@ Including Negative Audio Input
         </div>
 
         <!-- Row 8: SSL-SaN Model -->
-        <div class="inf-grid" style="align-items:center;">
+        <div class="inf-grid-is3" style="align-items:center;">
             <!-- Col 1: Model name -->
             <div class="row-label"
                 style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
@@ -2024,7 +2031,7 @@ Including Negative Audio Input
             <div class="inf-header">
                 <div class="header-cell">
                     <div class="header-label">
-                        <span>Piano</span>
+                        <span>Race Car</span>
                     </div>
                     <audio class="header-audio js-one-audio" controls preload="none">
                         <source src="assets/inferences/s4/7ynQ9wd6neQ.wav" type="audio/mpeg">
@@ -2069,7 +2076,7 @@ Including Negative Audio Input
             <div class="inf-header g2">
                 <div class="header-cell">
                     <div class="header-label">
-                        <span>Chicken</span>
+                        <span>Keyboard</span>
                     </div>
                     <audio class="header-audio js-one-audio" controls preload="none">
                         <source src="assets/inferences/s4/IldruEHS3m4.wav" type="audio/mpeg">
