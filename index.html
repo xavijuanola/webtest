@@ -16,6 +16,88 @@ Including Negative Audio Input
             margin: 0 auto;
         }
     </style> -->
+    <style>
+        .retrieval-section {
+            margin: 24px auto 40px;
+            max-width: 1100px;
+        }
+
+        .retrieval-header {
+            display: grid;
+            grid-template-columns: 180px repeat(4, 1fr);
+            gap: 8px;
+            align-items: end;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .retrieval-grid {
+            display: grid;
+            grid-template-columns: 180px repeat(4, 1fr);
+            gap: 12px;
+            align-items: start;
+        }
+
+        .cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .thumb {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+            margin-bottom: 6px;
+        }
+
+        .caption {
+            font-size: 12px;
+            line-height: 1.2;
+            text-align: center;
+            color: #444;
+            min-height: 2.2em;
+        }
+
+        .audio-box {
+            width: 100%;
+            max-width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .audio-box audio {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        .table-title {
+            text-align: center;
+            margin: 20px 0 6px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 900px) {
+
+            .retrieval-header,
+            .retrieval-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .retrieval-header> :nth-child(n+3) {
+                display: none;
+            }
+
+            .retrieval-grid> :nth-child(n+3) {
+                display: none;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -125,6 +207,69 @@ Including Negative Audio Input
     <br>
 
     <!-- Add horizontal line here -->
+    <!-- ===== Audio -> Image Retrieval (VGG-SS) ===== -->
+    <section class="retrieval-section" id="audio-to-image-vggss">
+        <div class="table-title">Audio → Image Retrieval en VGG-SS</div>
+
+        <!-- Cabecera -->
+        <div class="retrieval-header">
+            <div> <span>Query Audio</span> </div>
+            <div>Top 1</div>
+            <div>Top 2</div>
+            <div>Top 3</div>
+            <div>Top 4</div>
+        </div>
+
+        <!-- Fila: CASE 1 -->
+        <div class="retrieval-grid">
+            <!-- Col 1: audio reproducible + mini portada -->
+            <div class="cell">
+                <div class="audio-box">
+                    <!-- mini portada opcional (por ejemplo, un espectrograma o frame de referencia) -->
+                    <img class="thumb" src="/assets/retrieval/vggss/image/ai/oSUCIMc3Vp8_000055.jpg"
+                        alt="Query audio thumbnail">
+                    <audio controls preload="none">
+                        <source src="/assets/retrieval/vggss/audio/oSUCIMc3Vp8_000055.wav" type="audio/mpeg">
+                        <!-- fallback -->
+                        Tu navegador no soporta el elemento <code>audio</code>.
+                    </audio>
+                </div>
+                <div class="caption">people babbling (query)</div>
+            </div>
+
+            <!-- Col 2: imagen recuperada -->
+            <div class="cell">
+                <img class="thumb" src="/assets/retrieval/vggss/image/1obzCbmFpa8_000410.jpg" alt="Top1">
+                <div class="caption">people babbling</div>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cell">
+                <img class="thumb" src="/assets/retrieval/vggss/image/-hedbpc8T0E_000030.jpg" alt="Top2">
+                <div class="caption">people babbling</div>
+            </div>
+
+            <!-- Col 4 -->
+            <div class="cell">
+                <img class="thumb" src="/assets/retrieval/vggss/image/9BGpWG8iqpQ_000000.jpg" alt="Top3">
+                <div class="caption">people coughing</div>
+            </div>
+
+            <!-- Col 5 -->
+            <div class="cell">
+                <img class="thumb" src="/assets/retrieval/vggss/image/MDa1ZVdDz2Y_000060.jpg" alt="Top4">
+                <div class="caption">people coughing</div>
+            </div>
+        </div>
+
+        <!-- (Opcional) Fila: CASE 2 – duplica el bloque .retrieval-grid y cambia rutas/captions -->
+        <div style="height:16px"></div>
+
+        <!-- Pie de figura -->
+        <p style="text-align:center; font-size: 13px; color:#555; margin-top:10px;">
+            Figura 1. Ejemplos de <em>Audio → Image Retrieval</em> en VGG-SS.
+        </p>
+    </section>
 
     <!-- _______________________________________________________________________________________________________________________________________________________________________________________ -->
 
