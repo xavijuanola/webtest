@@ -14,133 +14,88 @@ Including Negative Audio Input
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning from Silence and Noise for Visual Sound Source Localization Models</title>
     <style>
-        .inferences-wrap {
-            margin: 28px auto 32px;
-            max-width: 1200px;
+        /* Original retrieval section styles */
+        .retrieval-section {
+            margin: 24px auto 40px;
+            max-width: 1100px;
         }
 
-        .inf-title {
-            text-align: center;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        /* 1 col de etiquetas de fila (modelos),
-     luego 4 cols del primer grupo,
-     1 col separadora,
-     y 4 cols del segundo grupo */
-        .inf-grid {
+        .retrieval-header {
             display: grid;
-            grid-template-columns: 80px repeat(4, 1fr) 16px repeat(4, 1fr);
-            gap: 10px 10px;
+            grid-template-columns: 180px repeat(4, 1fr);
+            gap: 8px;
+            align-items: end;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .retrieval-grid {
+            display: grid;
+            grid-template-columns: 180px repeat(4, 1fr);
+            gap: 12px;
             align-items: start;
         }
 
-        /* Cabeceras (fila 1) */
-        .inf-header {
-            text-align: center;
-            font-size: 13px;
-        }
-
-        .header-cell {
+        .cell {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 6px;
         }
 
-        .header-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            white-space: nowrap;
-            font-weight: 600;
-        }
-
-        .header-label img {
-            height: 16px;
-            width: 16px;
-            object-fit: contain;
-            opacity: 0.9;
-        }
-
-        .header-audio {
-            width: 160px;
-            /* ajusta si necesitas más ancho */
-            max-width: 100%;
-        }
-
-        /* Celda separadora entre grupos */
-        .inf-sep {
-            border-left: 1px dashed #bbb;
-            min-height: 1px;
-        }
-
-        /* Etiquetas de fila (modelos) en vertical */
-        .row-label {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            text-align: center;
-            font-size: 12px;
-            color: #222;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-        }
-
-        /* Celdas de imagen */
-        .inf-cell {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .inf-thumb {
-            width: 145px;
-            /* ~1.45 cm aprox. visual */
-            max-width: 100%;
-            height: auto;
+        .thumb {
+            width: 180px;
+            height: 135px;
+            object-fit: cover;
             border-radius: 6px;
             box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
-            background: #f7f7f7;
+            margin-bottom: 6px;
         }
 
-        .inf-cap {
-            font-size: 11.5px;
+        .caption {
+            font-size: 12px;
+            line-height: 1.2;
             text-align: center;
             color: #444;
-            line-height: 1.25;
             min-height: 2.2em;
         }
 
-        /* Pie de figura */
-        .inf-caption {
-            text-align: center;
-            font-size: 13px;
-            color: #555;
-            margin-top: 8px;
+        .audio-box {
+            width: 100%;
+            max-width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        /* Responsive: en pantallas pequeñas, mostrar un bloque (primer grupo) y ocultar el segundo */
-        @media (max-width: 980px) {
-            .inf-grid {
-                grid-template-columns: 70px repeat(4, 1fr);
+        .audio-box audio {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        .table-title {
+            text-align: center;
+            margin: 20px 0 6px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 900px) {
+
+            .retrieval-header,
+            .retrieval-grid {
+                grid-template-columns: 1fr 1fr;
             }
 
-            .inf-sep,
-            .g2 {
+            .retrieval-header> :nth-child(n+3) {
                 display: none;
             }
 
-            .header-audio {
-                width: 140px;
-            }
-
-            .inf-thumb {
-                width: 120px;
+            .retrieval-grid> :nth-child(n+3) {
+                display: none;
             }
         }
 
+        /* New inferences section styles */
         .inferences-wrap {
             margin: 28px auto 32px;
             max-width: 1200px;
@@ -153,9 +108,9 @@ Including Negative Audio Input
         }
 
         /* 1 col de etiquetas de fila (modelos),
-     luego 4 cols del primer grupo,
-     1 col separadora,
-     y 4 cols del segundo grupo */
+           luego 4 cols del primer grupo,
+           1 col separadora,
+           y 4 cols del segundo grupo */
         .inf-grid {
             display: grid;
             grid-template-columns: 80px repeat(4, 1fr) 16px repeat(4, 1fr);
