@@ -231,7 +231,7 @@ Including Negative Audio Input
 
 <body>
     <div class="overlay"></div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-xl-12 mx-auto text-center">
                 <h1>Learning from Silence and Noise for Visual Sound Source Localization Models</h1>
@@ -1544,11 +1544,833 @@ Including Negative Audio Input
     </section>
 
 
-    <h2 style="text-align:center; margin-top:40px; margin-bottom:10px;">Quaalitative results IS3<sup>+</sup></h2>
+    <h2 style="text-align:center; margin-top:40px; margin-bottom:10px;">Qualitative results IS3<sup>+</sup></h2>
+
+    <section class="inferences-wrap" id="qualitative-is3+">
+        <div class="inf-title">Qualitative localization on VGG-SS</div>
+
+        <!-- Row 1: Audio headers -->
+        <div class="inf-grid">
+            <!-- Col 1: empty -->
+            <div></div>
+
+            <!-- Grupo 1: Piano / Silence / Noise / Offscreen -->
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Cattle</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/is3+/cattle_stream_2431_cattle.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Stream</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/is3+/cattle_stream_2431_stream.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Silence</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/silence.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Noise</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/noise.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Offscreen</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/is3+/car_saxophone_4445_car.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Col separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2: Chicken / Silence / Noise / Offscreen -->
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Firework</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/is3+/fireworks_icecreamtruck_10363_firework.wav"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Icecream Truck</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/is3+/fireworks_icecreamtruck_10363_icecreamtruck.wav"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Silence</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/silence.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Noise</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/noise.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Offscreen</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/is3+/W1VYWwYdJRQ_000370.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2: LVS Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                LVS
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/cattle_stream_2431_cattle_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/lvs/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
+
+        <!-- Row 3: EZ-VSL Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                EZ-VSL
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/cattle_stream_2431_cattle_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg"
+                    alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ezvsl/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
+
+        <!-- Row 4: FNAC Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                FNAC
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/cattle_stream_2431_cattle_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg"
+                    alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/fnac/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
+
+        <!-- Row 5: SLAVC Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SLAVC
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/cattle_stream_2431_cattle_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg"
+                    alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/slavc/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
+
+        <!-- Row 6: SSL-TIE Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SSL-TIE
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/cattle_stream_2431_cattle_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt="">
+            </div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg"
+                    alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/ssltie/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
+
+        <!-- Row 7: SSL-Align (S. Sup.) Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SSL-Align (S. Sup.)
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/cattle_stream_2431_cattle_silence_thresholded.jpg" alt="">
+            </div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt="">
+            </div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg"
+                    alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslalign/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
+
+        <!-- Row 8: ACL Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                ACL
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/cattle_stream_2431_cattle_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/acl/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
+
+        <!-- Row 8: SSL-SaN Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SSL-SaN
+            </div>
+
+            <!-- Grupo 1 -->
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/cattle_stream_2431_cattle_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/cattle_stream_2431_stream_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/cattle_stream_2431_cattle_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/cattle_stream_2431_cattle_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/cattle_stream_2431_cattle_offscreen_thresholded.jpg" alt="">
+            </div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/fireworks_icecreamtruck_10363_firework_seg_overlay.jpg" alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/fireworks_icecreamtruck_10363_icecreamtruck_seg_overlay.jpg"
+                    alt="">
+            </div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/fireworks_icecreamtruck_10363_firework_silence_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/fireworks_icecreamtruck_10363_firework_noise_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/is3+/sslsan/fireworks_icecreamtruck_10363_firework_offscreen_thresholded.jpg"
+                    alt=""></div>
+        </div>
 
 
+        <p class="inf-caption">
+            Ejemplos de resultados de localización para distintos modelos en casos <em>positivos</em> y
+            <em>negativos</em>.
+            Los audios de referencia están disponibles en la cabecera de cada columna.
+        </p>
+    </section>
 
     <h2 style="text-align:center; margin-top:40px; margin-bottom:10px;">Quaalitative results AVS-Bench S4</h2>
+
+    <section class="inferences-wrap" id="qualitative-s4">
+        <div class="inf-title">Qualitative localization on AVS-Bench S4</div>
+
+        <!-- Row 1: Audio headers -->
+        <div class="inf-grid">
+            <!-- Col 1: empty -->
+            <div></div>
+
+            <!-- Grupo 1: Piano / Silence / Noise / Offscreen -->
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Piano</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/s4/7ynQ9wd6neQ.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Silence</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/silence.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Noise</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/noise.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Offscreen</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/s4/2tQjoo4LmXg.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Col separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2: Chicken / Silence / Noise / Offscreen -->
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Chicken</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/s4/IldruEHS3m4.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Silence</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/silence.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Noise</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/noise.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="inf-header g2">
+                <div class="header-cell">
+                    <div class="header-label">
+                        <span>Offscreen</span>
+                    </div>
+                    <audio class="header-audio js-one-audio" controls preload="none">
+                        <source src="assets/inferences/s4/0UN02RkbG_U.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2: LVS Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                LVS
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/lvs/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/lvs/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/lvs/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/lvs/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb" src="assets/inferences/s4/lvs/IldruEHS3m4_seg_overlay.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/lvs/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/lvs/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/lvs/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+        <!-- Row 3: EZ-VSL Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                EZ-VSL
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/ezvsl/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/ezvsl/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/ezvsl/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/ezvsl/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb" src="assets/inferences/s4/ezvsl/IldruEHS3m4_seg_overlay.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/ezvsl/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/ezvsl/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/ezvsl/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+        <!-- Row 4: FNAC Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                FNAC
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/fnac/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/fnac/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/fnac/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/fnac/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb" src="assets/inferences/s4/fnac/IldruEHS3m4_seg_overlay.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/fnac/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/fnac/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/fnac/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+        <!-- Row 5: SLAVC Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SLAVC
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/slavc/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/slavc/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/slavc/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/slavc/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb" src="assets/inferences/s4/slavc/IldruEHS3m4_seg_overlay.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/slavc/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/slavc/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/slavc/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+        <!-- Row 6: SSL-TIE Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SSL-TIE
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/ssltie/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/ssltie/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/ssltie/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/ssltie/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/ssltie/IldruEHS3m4_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/ssltie/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/ssltie/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/ssltie/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+        <!-- Row 7: SSL-Align (S. Sup.) Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SSL-Align (S. Sup.)
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/sslalign/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslalign/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslalign/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslalign/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslalign/IldruEHS3m4_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslalign/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslalign/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslalign/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+        <!-- Row 8: ACL Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                ACL
+            </div>
+
+            <!-- Grupo 1 (Piano→Offscreen) -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/acl/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/acl/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/acl/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/acl/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 (Chicken→Offscreen) -->
+            <div class="inf-cell g2"><img class="inf-thumb" src="assets/inferences/s4/acl/IldruEHS3m4_seg_overlay.jpg"
+                    alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/acl/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/acl/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/acl/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+        <!-- Row 8: SSL-SaN Model -->
+        <div class="inf-grid" style="align-items:center;">
+            <!-- Col 1: Model name -->
+            <div class="row-label"
+                style="display:flex;align-items:center;justify-content:center;align-self:stretch;margin-top:0;">
+                SSL-SaN
+            </div>
+
+            <!-- Grupo 1 -->
+            <div class="inf-cell"><img class="inf-thumb" src="assets/inferences/s4/sslsan/7ynQ9wd6neQ_thresholded.jpg"
+                    alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslsan/7ynQ9wd6neQ_silence_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslsan/7ynQ9wd6neQ_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslsan/7ynQ9wd6neQ_offscreen_thresholded.jpg" alt=""></div>
+
+            <!-- separador -->
+            <div class="inf-sep"></div>
+
+            <!-- Grupo 2 -->
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslsan/IldruEHS3m4_seg_overlay.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslsan/IldruEHS3m4_silence_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslsan/IldruEHS3m4_noise_thresholded.jpg" alt=""></div>
+            <div class="inf-cell g2"><img class="inf-thumb"
+                    src="assets/inferences/s4/sslsan/IldruEHS3m4_offscreen_thresholded.jpg" alt=""></div>
+        </div>
+
+
+        <p class="inf-caption">
+            Ejemplos de resultados de localización para distintos modelos en casos <em>positivos</em> y
+            <em>negativos</em>.
+            Los audios de referencia están disponibles en la cabecera de cada columna.
+        </p>
+    </section>
 
 </body>
 
